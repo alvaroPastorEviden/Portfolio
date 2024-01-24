@@ -1,0 +1,15 @@
+.active{
+    @apply relative px-4 py-3 flex items-center space-x-4 rounded-xl text-white bg-gradient-to-r from-sky-600 to-cyan-400;
+}
+
+.no-active{
+    @apply px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600;
+}
+
+.text-active{
+    @apply -mr-1 font-medium;
+}
+
+.text-no-active{
+    @apply group-hover:text-gray-700;
+}
