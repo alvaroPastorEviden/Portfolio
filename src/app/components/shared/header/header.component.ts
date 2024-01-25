@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  
+
+  copiarContenido = async () => {
+    try {
+      await navigator.clipboard.writeText("alvaropastorromero@gmail.com");
+      console.log('Contenido copiado al portapapeles');
+    } catch (err) {
+      console.error('Error al copiar: ', err);
+    }
+  }
 }
